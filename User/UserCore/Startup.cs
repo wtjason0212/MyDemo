@@ -18,6 +18,8 @@ using System.IO;
 using System.Net.Http;
 using UserCore.Data;
 using UserCore.Infrastructure.Middlewares;
+using UserCore.Models;
+using UserCore.Repositories;
 
 namespace UserCore
 {
@@ -35,9 +37,13 @@ namespace UserCore
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            //.net core ef
+            //EF連線字串
             services.AddDbContext<SchoolContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DbConnection")));
+
+            //依賴注入 將介面設定建構物建
+            services.AddScoped<IRepository<Oldwhite, int>, UserRepository>();
+
 
             services.AddOpenTracing();
 

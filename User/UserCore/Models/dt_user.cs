@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace UserCore.Models
 {
-    public class Student
+    public class dt_user
     {
         public int ID { get; set; }
         public string Name { get; set; }

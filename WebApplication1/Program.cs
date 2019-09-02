@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace WebApplication1
 {
@@ -14,11 +15,30 @@ namespace WebApplication1
     {
         public static void Main(string[] args)
         {
+            var configuration = GetConfiguration();
+            Log.Logger = CreateSerilogLogger(configuration);
+
             CreateWebHostBuilder(args).Build().Run();
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
+        private static Serilog.ILogger CreateSerilogLogger(IConfiguration configuration)
+        {
+            var seq = configuration["Serilog:SeqServerUrl"];
+            return new LoggerConfiguration()
+                .CreateLogger();
+        }
+        private static IConfiguration GetConfiguration()
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                .AddEnvironmentVariables();
+
+
+            return builder.Build();
+        }
     }
 }

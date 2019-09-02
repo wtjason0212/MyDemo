@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Jason\\筆記\\demo\\MyDemo\\WebApplication1\\WebApplication1.csproj": {}
+    "D:\\工作\\git\\MyDemo\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Jason\\筆記\\demo\\MyDemo\\WebApplication1\\WebApplication1.csproj": {
+    "D:\\工作\\git\\MyDemo\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Jason\\筆記\\demo\\MyDemo\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "D:\\工作\\git\\MyDemo\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Jason\\筆記\\demo\\MyDemo\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Jason\\筆記\\demo\\MyDemo\\WebApplication1\\obj\\",
+        "projectPath": "D:\\工作\\git\\MyDemo\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\徐偉傑\\.nuget\\packages\\",
+        "outputPath": "D:\\工作\\git\\MyDemo\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\徐偉傑\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -57,6 +57,10 @@
               "target": "Package",
               "version": "[2.2.0, )",
               "autoReferenced": true
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.8.0, )"
             }
           },
           "imports": [

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Jason\\筆記\\demo\\MyDemo\\User\\UserCore\\UserCore.csproj": {}
+    "D:\\工作\\git\\MyDemo\\User\\UserCore\\UserCore.csproj": {}
   },
   "projects": {
-    "C:\\Jason\\筆記\\demo\\MyDemo\\User\\UserCore\\UserCore.csproj": {
+    "D:\\工作\\git\\MyDemo\\User\\UserCore\\UserCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Jason\\筆記\\demo\\MyDemo\\User\\UserCore\\UserCore.csproj",
+        "projectUniqueName": "D:\\工作\\git\\MyDemo\\User\\UserCore\\UserCore.csproj",
         "projectName": "UserCore",
-        "projectPath": "C:\\Jason\\筆記\\demo\\MyDemo\\User\\UserCore\\UserCore.csproj",
-        "packagesPath": "C:\\Users\\jason\\.nuget\\packages\\",
-        "outputPath": "C:\\Jason\\筆記\\demo\\MyDemo\\User\\UserCore\\obj\\",
+        "projectPath": "D:\\工作\\git\\MyDemo\\User\\UserCore\\UserCore.csproj",
+        "packagesPath": "C:\\Users\\徐偉傑\\.nuget\\packages\\",
+        "outputPath": "D:\\工作\\git\\MyDemo\\User\\UserCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jason\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\徐偉傑\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
