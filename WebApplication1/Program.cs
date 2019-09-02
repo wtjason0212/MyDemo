@@ -28,6 +28,7 @@ namespace WebApplication1
         {
             var seq = configuration["Serilog:SeqServerUrl"];
             return new LoggerConfiguration()
+                //.ReadFrom.Configuration(configuration)
                 .CreateLogger();
         }
         private static IConfiguration GetConfiguration()
