@@ -1,0 +1,14 @@
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.deps.json
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.json
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.runtimeconfig.dev.json
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.dll
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\bin\Debug\netcoreapp2.2\WebApplication1.pdb
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csprojAssemblyReference.cache
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cache
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorAssemblyInfo.cs
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfoInputs.cache
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.AssemblyInfo.cs
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.RazorTargetAssemblyInfo.cache
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.dll
+C:\Jason\筆記\myDemo\MyDemo\WebApplication1\obj\Debug\netcoreapp2.2\WebApplication1.pdb

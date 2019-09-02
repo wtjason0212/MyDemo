@@ -1,0 +1,13 @@
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\bin\Release\netcoreapp2.2\UserCore.deps.json
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\bin\Release\netcoreapp2.2\UserCore.runtimeconfig.json
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\bin\Release\netcoreapp2.2\UserCore.runtimeconfig.dev.json
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\bin\Release\netcoreapp2.2\UserCore.dll
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\bin\Release\netcoreapp2.2\UserCore.pdb
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.csproj.CoreCompileInputs.cache
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.RazorAssemblyInfo.cache
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.RazorAssemblyInfo.cs
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.AssemblyInfoInputs.cache
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.AssemblyInfo.cs
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.RazorTargetAssemblyInfo.cache
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.dll
+C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.pdb

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UserCore</name>
+    </assembly>
+    <members>
+        <!-- Badly formed XML comment ignored for member "M:UserCore.Controllers.CircuitBreakerController.Get" -->
+        <member name="M:UserCore.Controllers.OldWhiteController.Get">
+            <summary>
+            OldWhite111
+            </summary>
+            <returns>OldWhite111</returns>
+        </member>
+        <member name="M:UserCore.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+                ValueGetId
+            </summary>
+            <param name="id">2</param>
+            <returns>ValueGetId</returns>
+        </member>
+    </members>
+</doc>
