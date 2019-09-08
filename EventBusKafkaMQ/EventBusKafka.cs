@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Newtonsoft.Json;
 
 namespace EventBusKafkaMQ
 {
@@ -37,7 +38,7 @@ namespace EventBusKafkaMQ
             {
                 try
                 {
-                    var dr = await p.ProduceAsync(TOPIC_NAME, new Message<Null, string> { Value = @event.Id });
+                    var dr = await p.ProduceAsync(TOPIC_NAME, new Message<Null, string> { Value = JsonConvert.SerializeObject(@event) });
                     Console.WriteLine($"Delivered '{dr.Value}' to '{dr.TopicPartitionOffset}'");
                 }
                 catch (ProduceException<Null, string> e)
@@ -47,7 +48,6 @@ namespace EventBusKafkaMQ
             }
 
 
-            throw new NotImplementedException();
         }
 
         public void Subscribe<T, TH>()

@@ -32,11 +32,22 @@ namespace WebApplication1
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.Configure<TestBackgroundTask>(config:Configuration);
+            services.Configure<TestBackgroundTask>(Configuration);
+            services.AddOptions();
 
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddOptions();
+
             services.AddSingleton<IHostedService, TestBackgroundTask>();
+
+
+            services.AddSingleton<IKafkaMQPersistentConnection>(sp =>
+            {
+                var logger = sp.GetRequiredService<ILogger<DefaultKafkaMQPersistentConnection>>();
+
+                return new DefaultKafkaMQPersistentConnection(logger);
+            });
+
+            RegisterEventBus(services);
 
             //create autofac based service provider
             var container = new ContainerBuilder();
@@ -50,12 +61,12 @@ namespace WebApplication1
         {
             //if (env.IsDevelopment())
             //{
-                //app.UseDeveloperExceptionPage();
+            //app.UseDeveloperExceptionPage();
             //}
             //else
             //{
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                //app.UseHsts();
+            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+            //app.UseHsts();
             //}
 
             //app.UseHttpsRedirection();

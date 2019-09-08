@@ -17,36 +17,48 @@ namespace WebApplication1
 {
     public class Program
     {
-        public static async Task Main(string[] args)
+        public static int Main(string[] args)
         {
-            //var configuration = GetConfiguration();
-            //Log.Logger = CreateSerilogLogger(configuration);
 
-            //var host = CreateWebHostBuilder(args).Build();
+            var configuration = GetConfiguration();
+            Log.Logger = CreateSerilogLogger(configuration);
 
-            //host.Run();
-
-            using (var cancelSource = new CancellationTokenSource())
+            try
             {
-                try
-                {
-                    await new HostBuilder()
-                    .ConfigureServices((hostContext, services) =>
-                    {
-                        services.AddHostedService<TestBackgroundTask>();
-                    }).Build()
-                    .RunAsync();
-                }
-                catch (Exception E)
-                {
-                    cancelSource.Cancel();
-                }
+                var host = CreateWebHostBuilder(configuration,args);
+
+                host.Run();
+                return 0;
             }
+            catch( Exception ex)
+            {
+                return 1;
+            }
+          
+
+            //using (var cancelSource = new CancellationTokenSource())
+            //{
+            //    try
+            //    {
+            //        await new HostBuilder()
+            //        .ConfigureServices((hostContext, services) =>
+            //        {
+            //            services.AddHostedService<TestBackgroundTask>();
+            //        }).Build()
+            //        .RunAsync();
+            //    }
+            //    catch (Exception E)
+            //    {
+            //        cancelSource.Cancel();
+            //    }
+            //}
         }
 
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+        public static IWebHost CreateWebHostBuilder(IConfiguration configuration, string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+                .UseStartup<Startup>()
+                .UseConfiguration(configuration)
+                .Build();
         private static Serilog.ILogger CreateSerilogLogger(IConfiguration configuration)
         {
             var seq = configuration["Serilog:SeqServerUrl"];
@@ -60,8 +72,7 @@ namespace WebApplication1
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddEnvironmentVariables();
-
-
+            
             return builder.Build();
         }
     }
