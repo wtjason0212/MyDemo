@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvenBus", "EvenBus\EvenBus.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBusKafkaMQ", "EventBusKafkaMQ\EventBusKafkaMQ.csproj", "{17830CEC-2279-4235-89A9-6518DECC3BF7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBackgroundTask", "MyBackgroundTask\MyBackgroundTask.csproj", "{41F679BB-83DE-4654-8B6C-6C53F367E84B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBackgroundTask", "MyBackgroundTask\MyBackgroundTask.csproj", "{41F679BB-83DE-4654-8B6C-6C53F367E84B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientService", "ClientService\ClientService.csproj", "{24390FB6-4840-4E81-95B5-BDD214570A9D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGateway", "APIGateway\APIGateway.csproj", "{10369EEB-5E1F-4309-A92E-2DD979D28BC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsAPIServices", "ProductService\ProductsAPIServices.csproj", "{496E84C8-22DF-4D26-86D0-982D04A04911}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{41F679BB-83DE-4654-8B6C-6C53F367E84B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41F679BB-83DE-4654-8B6C-6C53F367E84B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41F679BB-83DE-4654-8B6C-6C53F367E84B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24390FB6-4840-4E81-95B5-BDD214570A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24390FB6-4840-4E81-95B5-BDD214570A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24390FB6-4840-4E81-95B5-BDD214570A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24390FB6-4840-4E81-95B5-BDD214570A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10369EEB-5E1F-4309-A92E-2DD979D28BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10369EEB-5E1F-4309-A92E-2DD979D28BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10369EEB-5E1F-4309-A92E-2DD979D28BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10369EEB-5E1F-4309-A92E-2DD979D28BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{496E84C8-22DF-4D26-86D0-982D04A04911}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{496E84C8-22DF-4D26-86D0-982D04A04911}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{496E84C8-22DF-4D26-86D0-982D04A04911}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{496E84C8-22DF-4D26-86D0-982D04A04911}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

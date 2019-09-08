@@ -11,3 +11,11 @@ C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.A
 C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.RazorTargetAssemblyInfo.cache
 C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.dll
 C:\Jason\筆記\myDemo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.pdb
+C:\Jason\筆記\demo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.csprojAssemblyReference.cache
+C:\Jason\筆記\demo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.csproj.CoreCompileInputs.cache
+C:\Jason\筆記\demo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.RazorAssemblyInfo.cache
+C:\Jason\筆記\demo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.RazorAssemblyInfo.cs
+C:\Jason\筆記\demo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.AssemblyInfoInputs.cache
+C:\Jason\筆記\demo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.AssemblyInfo.cs
+C:\Jason\筆記\demo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.dll
+C:\Jason\筆記\demo\MyDemo\User\UserCore\obj\Release\netcoreapp2.2\UserCore.pdb

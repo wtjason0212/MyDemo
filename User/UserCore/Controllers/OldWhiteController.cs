@@ -27,7 +27,7 @@ namespace UserCore.Controllers
         [HttpGet]
         public async Task<ActionResult> Get()
         {
-            var white = from s in _context.oldwhites
+            var white = from s in _context.Oldwhite
                         select s;
 
             var result = white.AsNoTracking().ToList();

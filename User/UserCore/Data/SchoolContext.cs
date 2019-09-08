@@ -15,12 +15,12 @@ namespace UserCore.Data
         }
 
         //public DbSet<Student> Students { get; set; }
-        public DbSet<oldwhite> oldwhites { get; set; }
+        public DbSet<Oldwhite> Oldwhite { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //modelBuilder.Entity<Student>().ToTable("Student");
-            modelBuilder.Entity<oldwhite>().ToTable("oldwhite");
+            modelBuilder.Entity<Oldwhite>().ToTable("oldwhite");
         }
     }
 }

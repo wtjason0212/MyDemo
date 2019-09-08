@@ -21,7 +21,7 @@ namespace UserCore.Controllers
         public ActionResult<IEnumerable<string>> Get()
         {
             var s = new SelectListItem {Text="",Value="" };
-            return new string[] { "value1", "value2" };
+            return new string[] { "value99", "value99" };
         }
 
         /// <summary>
