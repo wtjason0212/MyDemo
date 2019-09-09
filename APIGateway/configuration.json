@@ -6,11 +6,12 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": "55950"
+          "Port": "5556"
         }
       ],
       "UpstreamPathTemplate": "/ClientService/{url}",
-      "UpstreamHttpMethod": [ "Get", "Post" ]
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "Key": "Client"
     },
     {
       "DownstreamPathTemplate": "/api/{url}",
@@ -18,17 +19,28 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "localhost",
-          "Port": "55950"
+          "Port": "5557"
         }
       ],
       "UpstreamPathTemplate": "/ProductService/{url}",
-      "UpstreamHttpMethod": [ "Get", "Post" ]
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "Key": "Product"
+    }
+  ],
+  "Aggregates": [
+    {
+      "ReRouteKeys": [
+        "Client",
+        "Product"
+      ],
+      "UpstreamPathTemplate": "/client-product/{url}",
+      "Aggregator": "FakeDefinedAggregator"
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://localhost:55954"
+    "BaseUrl": "http://localhost:9000"
 
-  },
+  }
 
 
 }

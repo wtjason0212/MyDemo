@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using APIGateway.Common;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,7 +19,7 @@ namespace APIGateway
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddMvc(); -- no need MVC // Ocelot 
-            services.AddOcelot(Configuration);
+            services.AddOcelot(Configuration).AddSingletonDefinedAggregator<FakeDefinedAggregator>();
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline. 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
