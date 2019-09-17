@@ -2,6 +2,9 @@
 using EvenBus.Abstractions;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using MyBackgroundTask;
+using MyBackgroundTask.Model;
+using MyBackgroundTask.Repositories;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -14,11 +17,14 @@ namespace WebApplication1.Tasks
         private readonly ILogger<TestBackgroundTask> _logger;
         private readonly IEventBus _eventBus;
         private Task _executingTask;
+        private readonly IProductRespository _context;
         private readonly CancellationTokenSource _stoppingCts = new CancellationTokenSource();
-        public TestBackgroundTask(ILogger<TestBackgroundTask> logger, IEventBus eventBus)
+        //public TestBackgroundTask(ILogger<TestBackgroundTask> logger, IEventBus eventBus,IProductRespository context)
+        public TestBackgroundTask(ILogger<TestBackgroundTask> logger, IEventBus eventBus, IProductRespository context)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            _eventBus = eventBus ?? throw new ArgumentNullException(nameof(eventBus)); ;
+            _eventBus = eventBus ?? throw new ArgumentNullException(nameof(eventBus));
+            _context = context;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -28,10 +34,12 @@ namespace WebApplication1.Tasks
             _logger.LogDebug($"Test Background Task Stop")
             );
 
+            var sss = _context.Add(new Product());
+
             var eventMessage = new UserErrorMessageIntegrationEvent("AKPay", "103", "h5", "簽名錯誤", DateTime.Now);
 
             _eventBus.Publish(eventMessage);
-
+            
             while (!stoppingToken.IsCancellationRequested)
             {
                 _logger.LogDebug("Test Task Doing Background Work");

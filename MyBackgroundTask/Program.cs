@@ -17,7 +17,7 @@ namespace WebApplication1
 {
     public class Program
     {
-        public static int Main(string[] args)
+        public static void Main(string[] args)
         {
 
             var configuration = GetConfiguration();
@@ -28,11 +28,11 @@ namespace WebApplication1
                 var host = CreateWebHostBuilder(configuration,args);
 
                 host.Run();
-                return 0;
+                //return 0;
             }
             catch( Exception ex)
             {
-                return 1;
+                //return 1;
             }
           
 
@@ -53,6 +53,7 @@ namespace WebApplication1
             //    }
             //}
         }
+ 
 
         public static IWebHost CreateWebHostBuilder(IConfiguration configuration, string[] args) =>
             WebHost.CreateDefaultBuilder(args)

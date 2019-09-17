@@ -10,10 +10,16 @@ namespace MyBackgroundTask.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly ProductContext _context;
+        public ValuesController(ProductContext context)
+        {
+            context = _context;
+        }
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            var ssss = _context.Product;
             return new string[] { "value1", "value2" };
         }
 

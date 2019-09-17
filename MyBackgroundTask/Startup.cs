@@ -17,6 +17,10 @@ using WebApplication1.Tasks;
 using EvenBus;
 using EvenBus.Abstractions;
 using EventBusKafkaMQ;
+using MyBackgroundTask.Repositories;
+using MyBackgroundTask.Model;
+using MyBackgroundTask;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebApplication1
 {
@@ -37,7 +41,13 @@ namespace WebApplication1
 
             //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddDbContext<ProductContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DbConnection")));
+
+
             services.AddSingleton<IHostedService, TestBackgroundTask>();
+
+            services.AddSingleton<IProductRespository, ProductRepository>();
 
 
             services.AddSingleton<IKafkaMQPersistentConnection>(sp =>
@@ -84,6 +94,14 @@ namespace WebApplication1
 
                 return new EventBusKafka(logger);
             });
+
+            //services.AddSingleton<IRespository<Product>,ProductRepository>(sp =>
+            //{
+            //    var sss = sp.GetRequiredService<ProductContext>();
+            //    return new ProductRepository(sss);
+            //}
+
+           //);
 
             services.AddSingleton<IEventBusSubscriptionsManager, InMemoryEventBusSubscriptionsManager>();
 
