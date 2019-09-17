@@ -20,7 +20,7 @@ namespace EventBusKafkaMQ
         }
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Console.Write("Dispose");
         }
 
         public async void Publish(IntegrationEvent @event)
